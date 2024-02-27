@@ -23,4 +23,4 @@ function arrayMaxMin(arr){
         }
      }
      return [arrMin, arrMax];       
-}
+    }
