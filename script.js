@@ -4,7 +4,6 @@ function isPalindrome(str){
     let arrStr = arrSpace.split('');
     let reverse = arrStr.reverse();
     let strReverse = reverse.join('');
-    console.log(arrSpace)
     if(arrSpace === strReverse){
         return true
     } 
