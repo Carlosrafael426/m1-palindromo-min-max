@@ -1,7 +1,27 @@
 function isPalindrome(str){
-    /* Seu código aqui */
+    let string = str.toLowerCase();
+    let arrSpace = string.replace(/\s/g, '');
+    let arrStr = arrSpace.split('');
+    let reverse = arrStr.reverse();
+    let strReverse = reverse.join('');
+    console.log(arrSpace)
+    if(arrSpace === strReverse){
+        return true
+    } 
+    return false
 }
 
 function arrayMaxMin(arr){
-    /* Seu código aqui */
+    let numbers = arr;
+    let arrMax = 0;
+    let arrMin = arr[0];
+    for(let i = 0; i < numbers.length; i++){ 
+        if(numbers[i] > arrMax ){
+            arrMax = numbers[i];
+        }
+        if(numbers[i] < arrMin){
+            arrMin = numbers[i]
+        }
+     }
+     return [arrMin, arrMax];       
 }
