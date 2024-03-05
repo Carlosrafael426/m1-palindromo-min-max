@@ -2,13 +2,17 @@ function isPalindrome(str){
     let string = str.toLowerCase();
     let arrSpace = string.replace(/\s/g, '');
     let arrStr = arrSpace.split('');
-    let reverse = arrStr.reverse();
-    let strReverse = reverse.join('');
-    if(arrSpace === strReverse){
+    let arrReverse = ""
+    
+    for(let i = arrStr.length-1; i >=0; i--){
+        arrReverse += arrStr[i] 
+    }
+    if(arrReverse === arrSpace){
         return true
-    } 
+    }
     return false
 }
+
 
 function arrayMaxMin(arr){
     let numbers = arr;
